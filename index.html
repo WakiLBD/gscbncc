@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Govt. Science College BNCC Platoon | 1 BNCC Battalion</title>
+    <meta name="description" content="Official website of Government Science College BNCC Platoon, 1 BNCC Battalion. Developing leadership, discipline, and unity among students in Bangladesh.">
+    <meta name="keywords" content="BNCC, GSC, Government Science College, Bangladesh National Cadet Corps, 1 BNCC Battalion, Ramna Regiment, Military Training, Leadership">
+    <meta name="author" content="Govt. Science College BNCC">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Govt. Science College BNCC Platoon">
+    <meta property="og:description" content="Forging the leaders of tomorrow through military discipline and social service.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1625628860228-13d428613763?q=80&w=800&auto=format&fit=crop">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bnccGreen: '#064F2B',
+                        bnccDark: '#032d18',
+                        bnccGold: '#D4AF37',
+                        bnccRed: '#BB1D1D',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('https://images.unsplash.com/photo-1519810725537-9c7d1b55209b?q=80&w=2070&auto=format&fit=crop')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Glassmorphism & Utilities */
+        .glass-nav {
+            background: rgba(6, 79, 43, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .text-shadow-lg {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .clip-slant {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        
+        /* Mobile adjustment for clip path */
+        @media (max-width: 768px) {
+            .clip-slant {
+                clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #032d18; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37; 
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden selection:bg-bnccGold selection:text-bnccGreen">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-bnccGold rounded-full flex items-center justify-center text-bnccGreen font-bold shadow-lg border-2 border-white">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-white font-serif font-bold text-lg leading-tight tracking-wide uppercase">GSC BNCC</h1>
+                    <p class="text-bnccGold text-xs uppercase tracking-widest">Ramna Regiment</p>
+                </div>
+            </div>
+
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-widest uppercase text-white">
+                <a href="#home" class="hover:text-bnccGold transition-colors relative group">Home<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-bnccGold transition-all group-hover:w-full"></span></a>
+                <a href="#about" class="hover:text-bnccGold transition-colors relative group">About<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-bnccGold transition-all group-hover:w-full"></span></a>
+	<a href="#members" class="hover:text-bnccGold transition-colors relative group">Members<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-bnccGold transition-all group-hover:w-full"></span></a>
+                <a href="#training" class="hover:text-bnccGold transition-colors relative group">Training<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-bnccGold transition-all group-hover:w-full"></span></a>
+                <a href="#gallery" class="hover:text-bnccGold transition-colors relative group">Gallery<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-bnccGold transition-all group-hover:w-full"></span></a>
+                <a href="#contact" class="px-5 py-2 border border-bnccGold text-bnccGold hover:bg-bnccGold hover:text-bnccGreen transition-all rounded-sm">Join Now</a>
+            </div>
+
+            <button id="mobile-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Menu">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-bnccGreen/95 backdrop-blur-md border-t border-white/10 p-6 flex flex-col space-y-4 text-center text-white uppercase tracking-widest shadow-xl">
+            <a href="#home" class="hover:text-bnccGold py-2">Home</a>
+            <a href="#about" class="hover:text-bnccGold py-2">About</a>
+            <a href="#members" class="hover:text-bnccGold py-2">Members</a>
+            <a href="#training" class="hover:text-bnccGold py-2">Training</a>
+            <a href="#gallery" class="hover:text-bnccGold py-2">Gallery</a>
+            <a href="#contact" class="text-bnccGold font-bold border border-bnccGold py-2 rounded-sm mt-2">Join Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen flex items-center justify-center overflow-hidden clip-slant">
+        <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center bg-fixed" role="img" aria-label="Cadets in parade"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-bnccGreen/90 via-bnccDark/80 to-transparent"></div>
+        
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-10 left-10 w-32 h-32 bg-bnccRed/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-20 w-40 h-40 bg-bnccGold/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative container mx-auto px-6 grid md:grid-cols-2 gap-8 items-center mt-16">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="h-1 w-12 bg-bnccGold"></span>
+                    <span class="text-bnccGold uppercase tracking-[0.3em] text-sm font-bold">1 BNCC Battalion</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold text-white leading-none mb-6 text-shadow-lg">
+                    Knowledge <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-bnccGold to-yellow-200">Discipline</span> <br>
+                    Unity
+                </h1>
+                <p class="text-gray-200 text-lg mb-8 max-w-lg border-l-4 border-bnccRed pl-4">
+                    Welcome to the official portal of Government Science College BNCC Platoon. Forging the leaders of tomorrow through military discipline and social service.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="px-8 py-4 bg-bnccRed text-white font-bold uppercase tracking-wider hover:bg-red-700 transition-all transform hover:-translate-y-1 shadow-lg shadow-red-900/50 rounded-sm">
+                        Join The Platoon
+                    </a>
+                    <a href="#about" class="px-8 py-4 border border-white text-white font-bold uppercase tracking-wider hover:bg-white hover:text-bnccGreen transition-all rounded-sm">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex justify-center relative" data-aos="zoom-in" data-aos-delay="300">
+                <div class="w-80 h-96 border-2 border-bnccGold/30 absolute -top-4 -right-4"></div>
+                <img src="https://images.unsplash.com/photo-1625628860228-13d428613763?q=80&w=800&auto=format&fit=crop" alt="Cadet Saluting" class="w-80 h-96 object-cover shadow-2xl shadow-bnccGold/20 z-10 grayscale hover:grayscale-0 transition-all duration-700" loading="eager">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="grid grid-cols-2 gap-4" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1580981434452-8b5013072390?q=80&w=600&auto=format&fit=crop" alt="BNCC Marching" class="w-full h-64 object-cover rounded-sm shadow-lg mt-8" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1555617766-c9480377e9bd?q=80&w=600&auto=format&fit=crop" alt="BNCC Uniform" class="w-full h-64 object-cover rounded-sm shadow-lg" loading="lazy">
+                </div>
+                
+                <div data-aos="fade-left">
+                    <h3 class="text-bnccRed font-bold uppercase tracking-widest mb-2">About Our Platoon</h3>
+                    <h2 class="text-4xl font-serif font-bold text-bnccGreen mb-6">Legacy of Excellence at <br>Govt. Science College</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        The Government Science College BNCC Platoon stands as a pillar of discipline within the Ramna Regiment. Established to groom students into responsible citizens, our platoon focuses on character building, leadership, and selfless service to the nation.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 bg-gray-50 border-l-4 border-bnccGold hover:shadow-md transition-shadow">
+                            <div class="p-2 bg-bnccGreen text-white rounded-full"><i data-lucide="shield"></i></div>
+                            <div>
+                                <h4 class="font-bold text-bnccDark">National Integrity</h4>
+                                <p class="text-sm text-gray-500">Upholding the sovereignty and pride of Bangladesh.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-gray-50 border-l-4 border-bnccRed hover:shadow-md transition-shadow">
+                            <div class="p-2 bg-bnccRed text-white rounded-full"><i data-lucide="users"></i></div>
+                            <div>
+                                <h4 class="font-bold text-bnccDark">Leadership & Teamwork</h4>
+                                <p class="text-sm text-gray-500">Training cadets to lead with confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-bnccGreen text-white">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div data-aos="zoom-in">
+                <h3 class="text-4xl font-serif font-bold text-bnccGold">1950+</h3>
+                <p class="text-sm uppercase tracking-widest opacity-80">Cadets Trained</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="100">
+                <h3 class="text-4xl font-serif font-bold text-bnccGold">50+</h3>
+                <p class="text-sm uppercase tracking-widest opacity-80">Camps Attended</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="text-4xl font-serif font-bold text-bnccGold">20</h3>
+                <p class="text-sm uppercase tracking-widest opacity-80">Awards Won</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300">
+                <h3 class="text-4xl font-serif font-bold text-bnccGold">100%</h3>
+                <p class="text-sm uppercase tracking-widest opacity-80">Dedication</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-bnccRed font-bold uppercase tracking-widest">What We Do</span>
+                <h2 class="text-4xl font-serif font-bold text-bnccDark mt-2">Training & Activities</h2>
+                <div class="w-20 h-1 bg-bnccGold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group bg-white rounded-sm shadow-lg overflow-hidden hover:-translate-y-2 transition-all duration-300" data-aos="fade-up">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595180209528-60496973f404?q=80&w=800&auto=format&fit=crop" alt="Military Drill" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-8 right-6 w-14 h-14 bg-bnccGold text-bnccDark flex items-center justify-center rounded-full shadow-lg">
+                            <i data-lucide="swords" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-bnccDark mb-2">Military Drill</h3>
+                        <p class="text-gray-600 text-sm mb-4">Instilling discipline through rigorous foot drill, weapons drill, and parades.</p>
+                        <a href="#" class="text-bnccRed font-bold text-sm uppercase flex items-center gap-1 group-hover:gap-3 transition-all">Details <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <div class="group bg-white rounded-sm shadow-lg overflow-hidden hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1617153710545-a87b416b07d7?q=80&w=800&auto=format&fit=crop" alt="Firing Training" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-8 right-6 w-14 h-14 bg-bnccRed text-white flex items-center justify-center rounded-full shadow-lg">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-bnccDark mb-2">Firing & Tactics</h3>
+                        <p class="text-gray-600 text-sm mb-4">Practical training in marksmanship and field craft tactics during camps.</p>
+                        <a href="#" class="text-bnccRed font-bold text-sm uppercase flex items-center gap-1 group-hover:gap-3 transition-all">Details <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <div class="group bg-white rounded-sm shadow-lg overflow-hidden hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop" alt="Social Welfare" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="absolute -top-8 right-6 w-14 h-14 bg-bnccGreen text-white flex items-center justify-center rounded-full shadow-lg">
+                            <i data-lucide="heart-handshake"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-bnccDark mb-2">Social Welfare</h3>
+                        <p class="text-gray-600 text-sm mb-4">Blood donation, tree plantation, and disaster relief operations.</p>
+                        <a href="#" class="text-bnccRed font-bold text-sm uppercase flex items-center gap-1 group-hover:gap-3 transition-all">Details <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Structure of Command Section (FIXED & RESPONSIVE) -->
+    <section class="py-20 bg-bnccDark text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-3xl font-serif font-bold text-bnccGold">Structure of Command</h2>
+                    <p class="text-gray-400 mt-2">The hierarchy that maintains our discipline.</p>
+                </div>
+                <button class="border border-gray-600 px-6 py-2 rounded-full hover:border-bnccGold hover:text-bnccGold transition-all">View Full Hierarchy</button>
+            </div>
+
+            <!-- Responsive Grid: 2 cols mobile, 3 cols tablet, 6 cols desktop -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+                
+                <!-- 1. CADET: Custom Crossed Fountain Pens -->
+                <div class="p-6 border border-white/10 rounded-lg hover:bg-white/5 transition-all group cursor-pointer" data-aos="fade-up" data-aos-delay="0">
+                    <div class="h-16 w-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-bnccGold group-hover:text-bnccDark transition-colors relative">
+                        <!-- Custom SVG for Crossed Fountain Pens -->
+                        <svg class="w-10 h-10 fill-current" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(50,50)">
+                                <!-- Pen 1 (Rotated -45deg) -->
+                                <g transform="rotate(-45)">
+                                    <path d="M-3 25 L0 35 L3 25 L-3 25 Z" fill="currentColor"/>
+                                    <rect x="-3" y="15" width="6" height="10" fill="currentColor"/>
+                                    <rect x="-4" y="-15" width="8" height="30" fill="currentColor"/>
+                                    <path d="M-5 -15 L-5 -35 Q0 -40 5 -35 L5 -15 Z" fill="currentColor"/>
+                                    <rect x="2" y="-32" width="1.5" height="15" rx="0.5" fill="currentColor" opacity="0.8"/>
+                                </g>
+                                <!-- Pen 2 (Rotated 45deg) -->
+                                <g transform="rotate(45)">
+                                    <path d="M-3 25 L0 35 L3 25 L-3 25 Z" fill="currentColor"/>
+                                    <rect x="-3" y="15" width="6" height="10" fill="currentColor"/>
+                                    <rect x="-4" y="-15" width="8" height="30" fill="currentColor"/>
+                                    <path d="M-5 -15 L-5 -35 Q0 -40 5 -35 L5 -15 Z" fill="currentColor"/>
+                                    <rect x="2" y="-32" width="1.5" height="15" rx="0.5" fill="currentColor" opacity="0.8"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-base md:text-lg">Cadet</h4>
+                    <p class="text-xs text-gray-400">Entry Level</p>
+                </div>
+
+                <!-- 2. LANCE CORPORAL: 1 Chevron DOWN -->
+                <div class="p-6 border border-white/10 rounded-lg hover:bg-white/5 transition-all group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-16 w-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-bnccGold group-hover:text-bnccDark transition-colors">
+                        <div class="flex flex-col pt-1">
+                            <i data-lucide="chevron-down" class="w-8 h-8 stroke-[3px]"></i>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-base md:text-lg">Lance Cpl</h4>
+                    <p class="text-xs text-gray-400">Asst. Sec Leader</p>
+                </div>
+
+                <!-- 3. CORPORAL: 2 Chevrons DOWN -->
+                <div class="p-6 border border-white/10 rounded-lg hover:bg-white/5 transition-all group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-16 w-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-bnccGold group-hover:text-bnccDark transition-colors">
+                        <div class="flex flex-col -space-y-3 pt-2">
+                            <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                            <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-base md:text-lg">Corporal</h4>
+                    <p class="text-xs text-gray-400">Section Leader</p>
+                </div>
+
+                <!-- 4. SERGEANT: 3 Chevrons DOWN -->
+                <div class="p-6 border border-white/10 rounded-lg hover:bg-white/5 transition-all group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-16 w-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-bnccGold group-hover:text-bnccDark transition-colors">
+                        <div class="flex flex-col -space-y-3 pt-2">
+                            <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                            <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                            <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-base md:text-lg">Sergeant</h4>
+                    <p class="text-xs text-gray-400">Platoon Senior</p>
+                </div>
+
+                <!-- 5. CUO: Custom Crossed Scimitars -->
+                <div class="p-6 border border-white/10 rounded-lg hover:bg-white/5 transition-all group cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+                    <div class="h-16 w-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-bnccGold group-hover:text-bnccDark transition-colors relative text-bnccGold group-hover:text-bnccDark">
+                        <!-- Custom SVG for Scimitars -->
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Left-leaning Scimitar -->
+                            <path d="M19 5 C 19 5, 12 15, 6 20" /> 
+                            <path d="M4 22 L 6 20" />             
+                            <line x1="4" y1="18" x2="8" y2="22" /> 
+                            <!-- Right-leaning Scimitar (Mirrored) -->
+                            <path d="M5 5 C 5 5, 12 15, 18 20" /> 
+                            <path d="M20 22 L 18 20" />           
+                            <line x1="16" y1="22" x2="20" y2="18" /> 
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-base md:text-lg text-bnccGold">C.U.O</h4>
+                    <p class="text-xs text-gray-400">Cadet Under Officer</p>
+                </div>
+
+                <!-- 6. PUO: Medal -->
+                <div class="p-6 border border-bnccRed/30 bg-bnccRed/10 rounded-lg hover:bg-bnccRed/20 transition-all group cursor-pointer" data-aos="fade-up" data-aos-delay="500">
+                    <div class="h-16 w-16 mx-auto bg-bnccRed/20 rounded-full flex items-center justify-center mb-4 text-bnccRed">
+                        <i data-lucide="medal" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="font-bold text-base md:text-lg text-white">PUO/BTO</h4>
+                    <p class="text-xs text-gray-400">Professor Under Officer</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-serif font-bold text-bnccGreen mb-8 text-center">Memories of Valor</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px]">
+                <div class="col-span-2 row-span-2 relative overflow-hidden rounded-sm group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1596726626730-652b79548e19?q=80&w=1200&auto=format&fit=crop" alt="Victory Day Parade" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="text-white font-bold">Victory Day Parade</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-sm group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1605218427306-635ba7497b15?q=80&w=600&auto=format&fit=crop" alt="Camp Activity" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                </div>
+                <div class="relative overflow-hidden rounded-sm group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1613909671201-29375506a073?q=80&w=600&auto=format&fit=crop" alt="Flag Raising" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                </div>
+                <div class="col-span-2 relative overflow-hidden rounded-sm group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1535581652167-3d67529ee634?q=80&w=800&auto=format&fit=crop" alt="Winter Camp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="text-white font-bold">Winter Camp 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100 relative">
+        <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent"></div>
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                <div class="bg-bnccGreen p-10 text-white md:w-2/5 flex flex-col justify-between relative overflow-hidden">
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-serif font-bold mb-2">Join The Ranks</h3>
+                        <p class="text-white/70 text-sm mb-8">Ready to serve? Fill out the form or visit the platoon office.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="map-pin" class="text-bnccGold"></i>
+                                <span class="text-sm">Tejgaon, Dhaka-1215</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="phone" class="text-bnccGold"></i>
+                                <span class="text-sm">+880 1700-000000</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="mail" class="text-bnccGold"></i>
+                                <span class="text-sm">bncc@gsc.edu.bd</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-xl"></div>
+                </div>
+
+                <div class="p-10 md:w-3/5">
+                    <form>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="relative">
+                                <input type="text" id="name" class="peer w-full border-b-2 border-gray-300 py-2 focus:outline-none focus:border-bnccGreen transition-colors placeholder-transparent" placeholder="Name">
+                                <label for="name" class="absolute left-0 -top-3.5 text-xs text-gray-500 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-bnccGreen">Full Name</label>
+                            </div>
+                            <div class="relative">
+                                <input type="text" id="roll" class="peer w-full border-b-2 border-gray-300 py-2 focus:outline-none focus:border-bnccGreen transition-colors placeholder-transparent" placeholder="Class Roll">
+                                <label for="roll" class="absolute left-0 -top-3.5 text-xs text-gray-500 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-bnccGreen">Class Roll</label>
+                            </div>
+                        </div>
+                        <div class="relative mb-4">
+                            <input type="email" id="email" class="peer w-full border-b-2 border-gray-300 py-2 focus:outline-none focus:border-bnccGreen transition-colors placeholder-transparent" placeholder="Email">
+                            <label for="email" class="absolute left-0 -top-3.5 text-xs text-gray-500 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-bnccGreen">Email Address</label>
+                        </div>
+                        <div class="relative mb-8">
+                            <textarea id="msg" rows="2" class="peer w-full border-b-2 border-gray-300 py-2 focus:outline-none focus:border-bnccGreen transition-colors placeholder-transparent" placeholder="Message"></textarea>
+                            <label for="msg" class="absolute left-0 -top-3.5 text-xs text-gray-500 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-bnccGreen">Why do you want to join?</label>
+                        </div>
+                        <button type="button" class="w-full bg-bnccDark text-white py-3 font-bold uppercase tracking-wider hover:bg-bnccGreen transition-colors rounded-sm shadow-lg">
+                            Submit Application
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bnccDark text-white pt-16 pb-8 border-t-4 border-bnccGold">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-2xl font-serif font-bold text-bnccGold mb-4">Govt. Science College BNCC</h2>
+                    <p class="text-gray-400 max-w-sm">
+                        1 BNCC Battalion, Ramna Regiment.<br>
+                        Dedicated to serving the nation through discipline, leadership, and unity.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#home" class="hover:text-bnccGold transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-bnccGold transition-colors">Platoon History</a></li>
+                        <li><a href="#" class="hover:text-bnccGold transition-colors">Alumni</a></li>
+                        <li><a href="#" class="hover:text-bnccGold transition-colors">Notice Board</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" aria-label="Facebook" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-bnccGold hover:text-bnccDark transition-all"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-bnccGold hover:text-bnccDark transition-all"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 Govt. Science College BNCC Platoon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Initialize Animate On Scroll
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-nav', 'py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('glass-nav', 'py-2');
+                navbar.classList.add('py-4');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
