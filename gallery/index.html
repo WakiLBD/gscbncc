@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Visual Archives | Govt. Science College BNCC</title>
+    <meta name="description" content="Photo gallery of GSC BNCC. Parades, camps, training, and social work activities.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bnccGreen: '#064F2B',
+                        bnccDark: '#032d18',
+                        bnccGold: '#D4AF37',
+                        bnccRed: '#BB1D1D',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        cinzel: ['Cinzel', 'serif'],
+                        bangla: ['Hind Siliguri', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-gallery': "url('https://images.unsplash.com/photo-1542259682-16c49156477e?q=80&w=2070&auto=format&fit=crop')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-nav {
+            background: rgba(6, 79, 43, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        /* Gallery Hover Overlay */
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #032d18; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden selection:bg-bnccGold selection:text-bnccGreen">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-bnccGold rounded-full flex items-center justify-center text-bnccGreen font-bold shadow-lg border-2 border-white">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div>
+                        <h1 class="text-white font-cinzel font-bold text-lg leading-tight tracking-wide uppercase">GSC BNCC</h1>
+                        <p class="text-bnccGold text-xs uppercase tracking-widest font-sans">Ramna Regiment</p>
+                    </div>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-widest uppercase text-white font-sans">
+                <a href="index.html" class="hover:text-bnccGold transition-colors">Home</a>
+                <a href="about_bncc.html" class="hover:text-bnccGold transition-colors">About BNCC</a>
+                <a href="#" class="text-bnccGold">Gallery</a>
+                <a href="faq.html" class="hover:text-bnccGold transition-colors">FAQ</a>
+                <a href="index.html#contact" class="px-5 py-2 border border-bnccGold text-bnccGold hover:bg-bnccGold hover:text-bnccGreen transition-all rounded-sm">Join Now</a>
+            </div>
+            <button id="mobile-btn" class="md:hidden text-white focus:outline-none"><i data-lucide="menu" class="w-8 h-8"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-bnccGreen/95 backdrop-blur-md border-t border-white/10 p-6 flex flex-col space-y-4 text-center text-white uppercase tracking-widest shadow-xl">
+            <a href="index.html" class="hover:text-bnccGold py-2">Home</a>
+            <a href="about_bncc.html" class="hover:text-bnccGold py-2">About BNCC</a>
+            <a href="#" class="text-bnccGold py-2">Gallery</a>
+            <a href="faq.html" class="hover:text-bnccGold py-2">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-hero-gallery bg-cover bg-center bg-fixed" role="img"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-bnccDark/60 to-transparent"></div>
+        
+        <!-- Camera Focus Animation -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none">
+             <div class="w-[80%] h-[80%] border-2 border-white/50 relative">
+                 <div class="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-bnccGold"></div>
+                 <div class="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-bnccGold"></div>
+                 <div class="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-bnccGold"></div>
+                 <div class="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-bnccGold"></div>
+             </div>
+        </div>
+
+        <div class="relative container mx-auto px-6 text-center mt-12" data-aos="zoom-out">
+            <h1 class="text-5xl md:text-7xl font-cinzel font-bold text-white mb-2 tracking-wide">
+                Visual Archives
+            </h1>
+            <p class="text-bnccGold text-sm uppercase tracking-[0.5em] font-sans">Moments of Glory</p>
+        </div>
+    </header>
+
+    <!-- Gallery Grid -->
+    <section class="py-20 bg-white min-h-screen">
+        <div class="container mx-auto px-6">
+            
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+                <button class="px-6 py-2 bg-bnccDark text-white rounded-full font-bold text-sm shadow-lg hover:bg-bnccGold hover:text-bnccDark transition-all">All Photos</button>
+                <button class="px-6 py-2 bg-white text-gray-600 border border-gray-200 rounded-full font-bold text-sm hover:bg-bnccGreen hover:text-white transition-all">Parades</button>
+                <button class="px-6 py-2 bg-white text-gray-600 border border-gray-200 rounded-full font-bold text-sm hover:bg-bnccGreen hover:text-white transition-all">Camping</button>
+                <button class="px-6 py-2 bg-white text-gray-600 border border-gray-200 rounded-full font-bold text-sm hover:bg-bnccGreen hover:text-white transition-all">Social Work</button>
+            </div>
+
+            <!-- Masonry-like Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Image 1 (Large) -->
+                <div class="group gallery-item relative overflow-hidden rounded-lg shadow-xl cursor-pointer h-80" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1596726626730-652b79548e19?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 ease-in-out" alt="Gallery Image" loading="lazy">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-bnccDark via-bnccDark/50 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-bnccGold text-xs font-bold uppercase tracking-wider">National Parade Ground</span>
+                        <h3 class="text-white font-cinzel text-xl font-bold">Victory Day Parade</h3>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="group gallery-item relative overflow-hidden rounded-lg shadow-xl cursor-pointer h-80" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 ease-in-out" alt="Gallery Image" loading="lazy">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-bnccDark via-bnccDark/50 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-bnccGold text-xs font-bold uppercase tracking-wider">Campus</span>
+                        <h3 class="text-white font-cinzel text-xl font-bold">Tree Plantation</h3>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="group gallery-item relative overflow-hidden rounded-lg shadow-xl cursor-pointer h-80" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1613909671201-29375506a073?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 ease-in-out" alt="Gallery Image" loading="lazy">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-bnccDark via-bnccDark/50 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-bnccGold text-xs font-bold uppercase tracking-wider">Morning Assembly</span>
+                        <h3 class="text-white font-cinzel text-xl font-bold">Flag Raising Ceremony</h3>
+                    </div>
+                </div>
+
+                 <!-- Image 4 -->
+                 <div class="group gallery-item relative overflow-hidden rounded-lg shadow-xl cursor-pointer h-80" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1542259682-16c49156477e?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 ease-in-out" alt="Gallery Image" loading="lazy">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-bnccDark via-bnccDark/50 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-bnccGold text-xs font-bold uppercase tracking-wider">Savar Cantonment</span>
+                        <h3 class="text-white font-cinzel text-xl font-bold">Weapon Training</h3>
+                    </div>
+                </div>
+
+                 <!-- Image 5 -->
+                 <div class="group gallery-item relative overflow-hidden rounded-lg shadow-xl cursor-pointer h-80" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Wp8MBNFL6un5FnolFBLmBJ40WDEEH8giog&s?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 ease-in-out" alt="Gallery Image" loading="lazy">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-bnccDark via-bnccDark/50 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-bnccGold text-xs font-bold uppercase tracking-wider">Drill</span>
+                        <h3 class="text-white font-cinzel text-xl font-bold">Platoon Inspection</h3>
+                    </div>
+                </div>
+
+                 <!-- Image 6 -->
+                 <div class="group gallery-item relative overflow-hidden rounded-lg shadow-xl cursor-pointer h-80" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 ease-in-out" alt="Gallery Image" loading="lazy">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-bnccDark via-bnccDark/50 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-bnccGold text-xs font-bold uppercase tracking-wider">Teamwork</span>
+                        <h3 class="text-white font-cinzel text-xl font-bold">Group Discussion</h3>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="px-8 py-3 border-2 border-bnccDark text-bnccDark font-bold rounded-full hover:bg-bnccDark hover:text-white transition-all uppercase tracking-widest text-xs">Load More Memories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bangla Quote Section -->
+    <section class="py-20 bg-bnccDark relative overflow-hidden flex items-center justify-center border-t-4 border-bnccRed">
+        <div class="container mx-auto px-6 text-center z-10" data-aos="zoom-in">
+            <i data-lucide="quote" class="w-12 h-12 text-white/20 mx-auto mb-4"></i>
+            <h2 class="text-3xl md:text-5xl font-bangla font-bold text-white leading-relaxed tracking-wide drop-shadow-lg">
+                "মনে রেখ যুদ্ধ করে, রক্ত দিয়ে দেশ পেয়েছি <br>
+                <span class="text-bnccRed">দেশ দেশ দেশ</span> বাঁচাতে রক্ত দিতে রাজি আছি !"
+            </h2>
+             <div class="mt-6 flex justify-center items-center gap-2 text-bnccGold">
+                <div class="h-px w-12 bg-bnccGold"></div>
+                <span class="uppercase tracking-[0.3em] text-xs font-sans">Cadet Oath</span>
+                <div class="h-px w-12 bg-bnccGold"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bnccDark text-white pt-16 pb-8 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-2xl font-cinzel font-bold text-bnccGold mb-4">Govt. Science College BNCC</h2>
+                    <p class="text-gray-400 max-w-sm font-sans">
+                        1 BNCC Battalion, Ramna Regiment.<br>
+                        Forging disciplined leaders for a better tomorrow.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm font-sans">Pages</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm font-sans">
+                        <li><a href="index.html" class="hover:text-bnccGold transition-colors">Home</a></li>
+                        <li><a href="about_bncc.html" class="hover:text-bnccGold transition-colors">About BNCC</a></li>
+                        <li><a href="faq.html" class="hover:text-bnccGold transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm font-sans">Contact</h4>
+                    <p class="text-gray-400 text-sm font-sans mb-2">Tejgaon, Dhaka-1215</p>
+                    <div class="flex gap-4 mt-4">
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-bnccGold hover:text-bnccDark transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm font-sans">
+                <p>&copy; 2025 Govt. Science College BNCC Platoon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-nav', 'py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('glass-nav', 'py-2');
+                navbar.classList.add('py-4');
+            }
+        });
+         const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

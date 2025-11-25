@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About BNCC | History & Ranks</title>
+    <meta name="description" content="Learn about the history, ranks, and organizational structure of Bangladesh National Cadet Corps.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bnccGreen: '#064F2B',
+                        bnccDark: '#032d18',
+                        bnccGold: '#D4AF37',
+                        bnccRed: '#BB1D1D',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        cinzel: ['Cinzel', 'serif'],
+                        bangla: ['Hind Siliguri', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-about': "url('https://images.unsplash.com/photo-1579965342575-16428a7c8d77?q=80&w=2000&auto=format&fit=crop')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-nav {
+            background: rgba(6, 79, 43, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #032d18; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden selection:bg-bnccGold selection:text-bnccGreen">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-bnccGold rounded-full flex items-center justify-center text-bnccGreen font-bold shadow-lg border-2 border-white">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div>
+                        <h1 class="text-white font-cinzel font-bold text-lg leading-tight tracking-wide uppercase">GSC BNCC</h1>
+                        <p class="text-bnccGold text-xs uppercase tracking-widest font-sans">Ramna Regiment</p>
+                    </div>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-widest uppercase text-white font-sans">
+                <a href="index.html" class="hover:text-bnccGold transition-colors">Home</a>
+                <a href="#" class="text-bnccGold">About BNCC</a>
+                <a href="gallery.html" class="hover:text-bnccGold transition-colors">Gallery</a>
+                <a href="faq.html" class="hover:text-bnccGold transition-colors">FAQ</a>
+                <a href="index.html#contact" class="px-5 py-2 border border-bnccGold text-bnccGold hover:bg-bnccGold hover:text-bnccGreen transition-all rounded-sm">Join Now</a>
+            </div>
+            <button id="mobile-btn" class="md:hidden text-white focus:outline-none"><i data-lucide="menu" class="w-8 h-8"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-bnccGreen/95 backdrop-blur-md border-t border-white/10 p-6 flex flex-col space-y-4 text-center text-white uppercase tracking-widest shadow-xl">
+            <a href="index.html" class="hover:text-bnccGold py-2">Home</a>
+            <a href="#" class="text-bnccGold py-2">About BNCC</a>
+            <a href="gallery.html" class="hover:text-bnccGold py-2">Gallery</a>
+            <a href="faq.html" class="hover:text-bnccGold py-2">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-hero-about bg-cover bg-center bg-fixed" role="img"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-bnccDark/90 via-bnccDark/70 to-gray-50"></div>
+        
+        <!-- Radar Animation -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
+            <svg width="600" height="600" viewBox="0 0 600 600">
+                <g fill="none" stroke="#D4AF37" stroke-width="1">
+                    <circle cx="300" cy="300" r="150" class="animate-ping" style="animation-duration: 4s;" />
+                    <circle cx="300" cy="300" r="280" stroke-dasharray="20 20" class="animate-[spin_20s_linear_infinite]" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="relative container mx-auto px-6 text-center mt-16" data-aos="zoom-in">
+            <span class="inline-block py-1 px-3 border border-bnccRed text-bnccRed bg-white/10 backdrop-blur rounded-full text-xs font-bold uppercase tracking-[0.2em] mb-4">Established 1979</span>
+            <h1 class="text-4xl md:text-6xl font-cinzel font-bold text-white mb-4 text-shadow-lg">
+                Knowledge. Discipline. Unity.
+            </h1>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto font-light font-sans">
+                The Bangladesh National Cadet Corps (BNCC) is a Para-Military force dedicated to serving the nation.
+            </p>
+        </div>
+    </header>
+
+    <!-- History & Mission Section -->
+    <section class="py-20 container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl font-cinzel font-bold text-bnccGreen mb-6">Our History</h2>
+                <div class="prose text-gray-600 leading-relaxed font-sans text-justify">
+                    <p class="mb-4">
+                        The Bangladesh National Cadet Corps (BNCC) has a rich heritage. Its origins trace back to the <strong>University Officers Training Corps (UOTC)</strong> founded in 1927. After the liberation war of 1971, the need for a unified youth force was felt strongly.
+                    </p>
+                    <p class="mb-4">
+                         On <strong>March 23, 1979</strong>, BNCC was officially formed by merging UOTC and the Junior Cadet Corps. Since then, it has been operating under the dual administration of the Ministry of Defence and the Ministry of Education.
+                    </p>
+                    <div class="border-l-4 border-bnccGold pl-4 italic text-gray-800 bg-gray-50 p-4 rounded-r-lg">
+                        "To develop the youth into disciplined and organized citizens, ready to serve the nation in times of natural calamities and war."
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative" data-aos="fade-left">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-bnccGold/10 rounded-full blur-3xl"></div>
+                <!-- Interactive Map / Graphic Placeholder -->
+                <div class="grid grid-cols-2 gap-4">
+                     <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-bnccGreen text-center transform hover:-translate-y-2 transition-transform">
+                        <i data-lucide="shield" class="w-10 h-10 text-bnccGreen mx-auto mb-3"></i>
+                        <h3 class="font-bold text-bnccDark font-cinzel">Army Wing</h3>
+                        <p class="text-xs text-gray-500">5 Regiments</p>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-600 text-center transform hover:-translate-y-2 transition-transform">
+                        <i data-lucide="anchor" class="w-10 h-10 text-blue-600 mx-auto mb-3"></i>
+                        <h3 class="font-bold text-bnccDark font-cinzel">Naval Wing</h3>
+                        <p class="text-xs text-gray-500">3 Flotillas</p>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-sky-400 text-center transform hover:-translate-y-2 transition-transform">
+                        <i data-lucide="plane" class="w-10 h-10 text-sky-400 mx-auto mb-3"></i>
+                        <h3 class="font-bold text-bnccDark font-cinzel">Air Wing</h3>
+                        <p class="text-xs text-gray-500">3 Squadrons</p>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-bnccRed text-center transform hover:-translate-y-2 transition-transform">
+                        <i data-lucide="users" class="w-10 h-10 text-bnccRed mx-auto mb-3"></i>
+                        <h3 class="font-bold text-bnccDark font-cinzel">Total Cadets</h3>
+                        <p class="text-xs text-gray-500">25,000+</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranks Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-cinzel font-bold text-bnccDark">Cadet Ranks</h2>
+                <div class="w-20 h-1 bg-bnccRed mx-auto mt-4"></div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- Rank Card -->
+                <div class="w-40 bg-white p-4 rounded-lg shadow-md text-center group hover:shadow-xl transition-all" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="h-20 flex items-center justify-center text-bnccGold mb-2 group-hover:scale-110 transition-transform">
+                         <!-- Custom SVG for CUO -->
+                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 5 C 19 5, 12 15, 6 20" /><path d="M4 22 L 6 20" /><line x1="4" y1="18" x2="8" y2="22" /><path d="M5 5 C 5 5, 12 15, 18 20" /><path d="M20 22 L 18 20" /><line x1="16" y1="22" x2="20" y2="18" /></svg>
+                    </div>
+                    <h3 class="font-bold text-bnccDark text-sm">C.U.O</h3>
+                    <p class="text-[10px] text-gray-500 uppercase">Cadet Under Officer</p>
+                </div>
+
+                <div class="w-40 bg-white p-4 rounded-lg shadow-md text-center group hover:shadow-xl transition-all" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="h-20 flex items-center justify-center text-bnccGreen mb-2 group-hover:scale-110 transition-transform">
+                         <div class="flex flex-col -space-y-2">
+                             <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                             <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                             <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                         </div>
+                    </div>
+                    <h3 class="font-bold text-bnccDark text-sm">Sergeant</h3>
+                    <p class="text-[10px] text-gray-500 uppercase">Platoon Senior</p>
+                </div>
+
+                <div class="w-40 bg-white p-4 rounded-lg shadow-md text-center group hover:shadow-xl transition-all" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="h-20 flex items-center justify-center text-bnccGreen mb-2 group-hover:scale-110 transition-transform">
+                         <div class="flex flex-col -space-y-2">
+                             <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                             <i data-lucide="chevron-down" class="w-6 h-6 stroke-[3px]"></i>
+                         </div>
+                    </div>
+                    <h3 class="font-bold text-bnccDark text-sm">Corporal</h3>
+                    <p class="text-[10px] text-gray-500 uppercase">Section Leader</p>
+                </div>
+
+                <div class="w-40 bg-white p-4 rounded-lg shadow-md text-center group hover:shadow-xl transition-all" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="h-20 flex items-center justify-center text-bnccGreen mb-2 group-hover:scale-110 transition-transform">
+                         <i data-lucide="chevron-down" class="w-8 h-8 stroke-[3px]"></i>
+                    </div>
+                    <h3 class="font-bold text-bnccDark text-sm">Lance Corporal</h3>
+                    <p class="text-[10px] text-gray-500 uppercase">Asst. Sec Leader</p>
+                </div>
+                
+                 <div class="w-40 bg-white p-4 rounded-lg shadow-md text-center group hover:shadow-xl transition-all" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="h-20 flex items-center justify-center text-gray-400 mb-2 group-hover:scale-110 transition-transform">
+                         <i data-lucide="minus" class="w-8 h-8 stroke-[3px]"></i>
+                    </div>
+                    <h3 class="font-bold text-bnccDark text-sm">Cadet</h3>
+                    <p class="text-[10px] text-gray-500 uppercase">Soldier</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bangla Quote Section -->
+    <section class="py-20 bg-bnccDark relative overflow-hidden flex items-center justify-center border-t-4 border-bnccRed">
+        <div class="container mx-auto px-6 text-center z-10" data-aos="fade-up">
+            <h2 class="text-3xl md:text-5xl font-bangla font-bold text-white leading-relaxed tracking-wide drop-shadow-lg">
+                "মনে রেখ যুদ্ধ করে, রক্ত দিয়ে দেশ পেয়েছি <br>
+                <span class="text-bnccRed">দেশ দেশ দেশ</span> বাঁচাতে রক্ত দিতে রাজি আছি !"
+            </h2>
+             <div class="mt-6 flex justify-center items-center gap-2 text-bnccGold">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <span class="uppercase tracking-[0.3em] text-xs font-sans">Bangladesh Armed Forces</span>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bnccDark text-white pt-16 pb-8 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-2xl font-cinzel font-bold text-bnccGold mb-4">Govt. Science College BNCC</h2>
+                    <p class="text-gray-400 max-w-sm font-sans">
+                        1 BNCC Battalion, Ramna Regiment.<br>
+                        Forging disciplined leaders for a better tomorrow.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm font-sans">Pages</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm font-sans">
+                        <li><a href="index.html" class="hover:text-bnccGold transition-colors">Home</a></li>
+                        <li><a href="faq.html" class="hover:text-bnccGold transition-colors">FAQ</a></li>
+                        <li><a href="gallery.html" class="hover:text-bnccGold transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm font-sans">Contact</h4>
+                    <p class="text-gray-400 text-sm font-sans mb-2">Tejgaon, Dhaka-1215</p>
+                    <div class="flex gap-4 mt-4">
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-bnccGold hover:text-bnccDark transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm font-sans">
+                <p>&copy; 2025 Govt. Science College BNCC Platoon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-nav', 'py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('glass-nav', 'py-2');
+                navbar.classList.add('py-4');
+            }
+        });
+         const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

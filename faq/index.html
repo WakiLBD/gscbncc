@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>FAQ & Guidelines | Govt. Science College BNCC</title>
+    <meta name="description" content="Frequently Asked Questions about joining GSC BNCC. recruitment criteria, benefits, and guidelines.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bnccGreen: '#064F2B',
+                        bnccDark: '#032d18',
+                        bnccGold: '#D4AF37',
+                        bnccRed: '#BB1D1D',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        cinzel: ['Cinzel', 'serif'],
+                        bangla: ['Hind Siliguri', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-faq': "url('https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2073&auto=format&fit=crop')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-nav {
+            background: rgba(6, 79, 43, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Accordion Styles */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .5s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #032d18; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden selection:bg-bnccGold selection:text-bnccGreen">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-bnccGold rounded-full flex items-center justify-center text-bnccGreen font-bold shadow-lg border-2 border-white">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-white font-cinzel font-bold text-lg leading-tight tracking-wide uppercase">GSC BNCC</h1>
+                        <p class="text-bnccGold text-xs uppercase tracking-widest font-sans">Ramna Regiment</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-widest uppercase text-white font-sans">
+                <a href="index.html" class="hover:text-bnccGold transition-colors">Home</a>
+                <a href="about_bncc.html" class="hover:text-bnccGold transition-colors">About BNCC</a>
+                <a href="gallery.html" class="hover:text-bnccGold transition-colors">Gallery</a>
+                <a href="#" class="text-bnccGold">FAQ</a>
+                <a href="index.html#contact" class="px-5 py-2 border border-bnccGold text-bnccGold hover:bg-bnccGold hover:text-bnccGreen transition-all rounded-sm">Join Now</a>
+            </div>
+
+            <button id="mobile-btn" class="md:hidden text-white focus:outline-none"><i data-lucide="menu" class="w-8 h-8"></i></button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-bnccGreen/95 backdrop-blur-md border-t border-white/10 p-6 flex flex-col space-y-4 text-center text-white uppercase tracking-widest shadow-xl">
+            <a href="index.html" class="hover:text-bnccGold py-2">Home</a>
+            <a href="about_bncc.html" class="hover:text-bnccGold py-2">About BNCC</a>
+            <a href="gallery.html" class="hover:text-bnccGold py-2">Gallery</a>
+            <a href="#" class="text-bnccGold py-2">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-hero-faq bg-cover bg-center bg-fixed" role="img"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-bnccDark/95 via-bnccGreen/80 to-bnccDark/90"></div>
+        
+        <!-- Floating Plus Animation -->
+        <div class="absolute top-20 left-10 animate-bounce opacity-30" style="animation-duration: 3s;">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><path d="M12 5v14M5 12h14" /></svg>
+        </div>
+
+        <div class="relative container mx-auto px-6 text-center mt-12" data-aos="fade-up">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm border border-white/20">
+                <i data-lucide="help-circle" class="w-8 h-8 text-bnccGold"></i>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-cinzel font-bold text-white mb-4">Questions & Guidelines</h1>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto font-light font-sans">
+                Everything you need to know about joining the Bangladesh National Cadet Corps.
+            </p>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50 relative">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-bnccGold/5 rounded-bl-full pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- Category: Recruitment -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h2 class="flex items-center gap-3 text-2xl font-cinzel font-bold text-bnccDark mb-6 border-b-2 border-bnccRed pb-2 inline-block">
+                        <i data-lucide="user-plus" class="text-bnccRed"></i> Recruitment
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <details class="group bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-bnccGreen">
+                            <summary class="flex justify-between items-center cursor-pointer p-5 bg-white group-hover:bg-gray-50 transition-colors">
+                                <h3 class="font-bold text-gray-800 font-sans">Who can join BNCC?</h3>
+                                <span class="transform group-open:rotate-180 transition-transform duration-300 text-bnccGreen">
+                                    <i data-lucide="chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="p-5 pt-0 text-gray-600 leading-relaxed font-sans border-t border-gray-100 mt-2">
+                                Any student currently enrolled in Class 11 (First Year) or Honours 1st Year at Government Science College can apply. You must be physically fit and willing to dedicate time for training.
+                            </div>
+                        </details>
+
+                        <details class="group bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-bnccGreen">
+                            <summary class="flex justify-between items-center cursor-pointer p-5 bg-white group-hover:bg-gray-50 transition-colors">
+                                <h3 class="font-bold text-gray-800 font-sans">What are the physical requirements?</h3>
+                                <span class="transform group-open:rotate-180 transition-transform duration-300 text-bnccGreen">
+                                    <i data-lucide="chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="p-5 pt-0 text-gray-600 leading-relaxed font-sans border-t border-gray-100 mt-2">
+                                <ul class="list-disc list-inside space-y-2">
+                                    <li><strong>Height:</strong> Male: Minimum 5'6" | Female: Minimum 5'2"</li>
+                                    <li><strong>Fitness:</strong> Must pass the physical endurance test (Running, Pushups).</li>
+                                    <li><strong>Vision:</strong> Correctable vision is acceptable.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- Category: Benefits -->
+                <div class="mb-12" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="flex items-center gap-3 text-2xl font-cinzel font-bold text-bnccDark mb-6 border-b-2 border-bnccGold pb-2 inline-block">
+                        <i data-lucide="medal" class="text-bnccGold"></i> Benefits & Opportunities
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <details class="group bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-bnccGold">
+                            <summary class="flex justify-between items-center cursor-pointer p-5 bg-white group-hover:bg-gray-50 transition-colors">
+                                <h3 class="font-bold text-gray-800 font-sans">Will BNCC help me join the Military?</h3>
+                                <span class="transform group-open:rotate-180 transition-transform duration-300 text-bnccGold">
+                                    <i data-lucide="chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="p-5 pt-0 text-gray-600 leading-relaxed font-sans border-t border-gray-100 mt-2">
+                                Yes. BNCC cadets receive special preferences during ISSB and recruitment in Bangladesh Army, Navy, and Air Force. Specifically, you may bypass the written exam for the soldier recruitment process in some cases.
+                            </div>
+                        </details>
+
+                        <details class="group bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-bnccGold">
+                            <summary class="flex justify-between items-center cursor-pointer p-5 bg-white group-hover:bg-gray-50 transition-colors">
+                                <h3 class="font-bold text-gray-800 font-sans">Do we get any academic marks?</h3>
+                                <span class="transform group-open:rotate-180 transition-transform duration-300 text-bnccGold">
+                                    <i data-lucide="chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="p-5 pt-0 text-gray-600 leading-relaxed font-sans border-t border-gray-100 mt-2">
+                                Cadets who complete the course and pass the exams (Certificate B/C) are awarded additional marks in Honours/Degree final exams under National University.
+                            </div>
+                        </details>
+                        
+                         <details class="group bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-bnccGold">
+                            <summary class="flex justify-between items-center cursor-pointer p-5 bg-white group-hover:bg-gray-50 transition-colors">
+                                <h3 class="font-bold text-gray-800 font-sans">Is there any chance to go abroad?</h3>
+                                <span class="transform group-open:rotate-180 transition-transform duration-300 text-bnccGold">
+                                    <i data-lucide="chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="p-5 pt-0 text-gray-600 leading-relaxed font-sans border-t border-gray-100 mt-2">
+                                Absolutely. Selected cadets participate in Youth Exchange Programs (YEP) to countries like India, Maldives, Sri Lanka, Nepal, and Singapore as state ambassadors.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- Category: Training -->
+                <div class="mb-12" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="flex items-center gap-3 text-2xl font-cinzel font-bold text-bnccDark mb-6 border-b-2 border-gray-400 pb-2 inline-block">
+                        <i data-lucide="swords" class="text-gray-600"></i> Training Routine
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <details class="group bg-white rounded-lg shadow-md overflow-hidden border-l-4 border-gray-400">
+                            <summary class="flex justify-between items-center cursor-pointer p-5 bg-white group-hover:bg-gray-50 transition-colors">
+                                <h3 class="font-bold text-gray-800 font-sans">When are the parades held?</h3>
+                                <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-500">
+                                    <i data-lucide="chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="p-5 pt-0 text-gray-600 leading-relaxed font-sans border-t border-gray-100 mt-2">
+                                Regular parades are usually held twice a week (typically Tuesday and Friday) at the college premises from 02:00 PM to 05:00 PM.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bangla Quote Section -->
+    <section class="py-20 bg-bnccDark relative overflow-hidden flex items-center justify-center border-t-4 border-bnccRed">
+         <!-- Rotating Shield SVG Background -->
+         <div class="absolute left-10 top-1/2 transform -translate-y-1/2 opacity-5 pointer-events-none">
+            <svg width="300" height="300" viewBox="0 0 100 100" class="animate-[spin_20s_linear_infinite]">
+                <path d="M50 5 L90 25 L90 75 L50 95 L10 75 L10 25 Z" fill="none" stroke="#FFFFFF" stroke-width="1" />
+                <path d="M50 15 L80 30 L80 70 L50 85 L20 70 L20 30 Z" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="2 2"/>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 text-center z-10" data-aos="zoom-in">
+            <div class="w-1 bg-bnccGold h-16 mx-auto mb-6"></div>
+            <h2 class="text-3xl md:text-5xl font-bangla font-bold text-white leading-relaxed tracking-wide drop-shadow-lg">
+                "মনে রেখ যুদ্ধ করে, রক্ত দিয়ে দেশ পেয়েছি <br>
+                <span class="text-bnccRed">দেশ দেশ দেশ</span> বাঁচাতে রক্ত দিতে রাজি আছি !"
+            </h2>
+            <div class="mt-6 flex justify-center items-center gap-2 text-bnccGold">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <span class="uppercase tracking-[0.3em] text-xs font-sans">BNCC ARMY WING</span>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bnccDark text-white pt-16 pb-8 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-2xl font-cinzel font-bold text-bnccGold mb-4">Govt. Science College BNCC</h2>
+                    <p class="text-gray-400 max-w-sm font-sans">
+                        1 BNCC Battalion, Ramna Regiment.<br>
+                        Forging disciplined leaders for a better tomorrow.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm font-sans">Pages</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm font-sans">
+                        <li><a href="index.html" class="hover:text-bnccGold transition-colors">Home</a></li>
+                        <li><a href="about_bncc.html" class="hover:text-bnccGold transition-colors">About BNCC</a></li>
+                        <li><a href="gallery.html" class="hover:text-bnccGold transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-wider text-sm font-sans">Contact</h4>
+                    <p class="text-gray-400 text-sm font-sans mb-2">Tejgaon, Dhaka-1215</p>
+                    <div class="flex gap-4 mt-4">
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-bnccGold hover:text-bnccDark transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm font-sans">
+                <p>&copy; 2025 Govt. Science College BNCC Platoon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-nav', 'py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('glass-nav', 'py-2');
+                navbar.classList.add('py-4');
+            }
+        });
+
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
