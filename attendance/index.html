@@ -402,11 +402,19 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize Icons & Animation
-        lucide.createIcons();
-        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
+        // 1. Initialize Icons
+        // We check if lucide is ready, otherwise the DOMContentLoaded script up top handles it
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
 
-        // Navbar Scroll Logic
+        // 2. Initialize Animate On Scroll
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+
+        // 3. Navbar Scroll Effect (Glassmorphism)
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -418,13 +426,9 @@
             }
         });
 
-        // Mobile Menu Logic
-        const btn = document.getElementById('mobile-btn');
-        const menu = document.getElementById('mobile-menu');
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
+        // REMOVED: The duplicate "Mobile Menu Toggle" code was here. 
+        // The script at the top of your file (Line 118) handles the menu perfectly.
+        
         // --- Rank Icons HTML Templates ---
         const icons = {
             cadet: `<div class="h-10 w-10 flex-shrink-0 bg-bnccDark/10 rounded-full flex items-center justify-center text-bnccDark relative"><svg class="w-6 h-6 fill-current" viewBox="0 0 100 100"><g transform="translate(50,50)"><g transform="rotate(-45)"><path d="M-3 25 L0 35 L3 25 L-3 25 Z" fill="currentColor"/><rect x="-3" y="15" width="6" height="10" fill="currentColor"/><rect x="-4" y="-15" width="8" height="30" fill="currentColor"/><path d="M-5 -15 L-5 -35 Q0 -40 5 -35 L5 -15 Z" fill="currentColor"/><rect x="2" y="-32" width="1.5" height="15" rx="0.5" fill="currentColor" opacity="0.8"/></g><g transform="rotate(45)"><path d="M-3 25 L0 35 L3 25 L-3 25 Z" fill="currentColor"/><rect x="-3" y="15" width="6" height="10" fill="currentColor"/><rect x="-4" y="-15" width="8" height="30" fill="currentColor"/><path d="M-5 -15 L-5 -35 Q0 -40 5 -35 L5 -15 Z" fill="currentColor"/><rect x="2" y="-32" width="1.5" height="15" rx="0.5" fill="currentColor" opacity="0.8"/></g></g></svg></div>`,

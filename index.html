@@ -650,10 +650,11 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize Icons
-        lucide.createIcons();
+        // 1. Initialize Icons
+        // We check if lucide is ready, otherwise the DOMContentLoaded script up top handles it
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
 
-        // Initialize Animate On Scroll
+        // 2. Initialize Animate On Scroll
         AOS.init({
             once: true,
             offset: 100,
@@ -661,7 +662,7 @@
             easing: 'ease-out-cubic',
         });
 
-        // Navbar Scroll Effect
+        // 3. Navbar Scroll Effect (Glassmorphism)
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -673,13 +674,8 @@
             }
         });
 
-        // Mobile Menu Toggle
-        const btn = document.getElementById('mobile-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
+        // REMOVED: The duplicate "Mobile Menu Toggle" code was here. 
+        // The script at the top of your file (Line 118) handles the menu perfectly.
     </script>
 </body>
 </html>
