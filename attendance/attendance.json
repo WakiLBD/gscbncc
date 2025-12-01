@@ -1,0 +1,57 @@
+{
+  "members": [
+    { "id": 101, "name": "Mahfuzur Rahman", "rank": "puo", "rankName": "PUO" },
+    { "id": 102, "name": "Rahim Ahmed", "rank": "cuo", "rankName": "C.U.O" },
+    { "id": 103, "name": "Karim Islam", "rank": "sergeant", "rankName": "Sgt" },
+    { "id": 104, "name": "Sajid Hasan", "rank": "corporal", "rankName": "Cpl" },
+    { "id": 105, "name": "Tanvir Hossain", "rank": "lance_cpl", "rankName": "L.Cpl" },
+    { "id": 106, "name": "Abir Rahman", "rank": "cadet", "rankName": "Cdt" },
+    { "id": 107, "name": "Rafiq Mia", "rank": "cadet", "rankName": "Cdt" },
+    { "id": 108, "name": "Sakib Al Hasan", "rank": "cadet", "rankName": "Cdt" },
+    { "id": 109, "name": "Nasir Uddin", "rank": "cadet", "rankName": "Cdt" },
+    { "id": 110, "name": "Mehedi Hasan", "rank": "cadet", "rankName": "Cdt" },
+    { "id": 111, "name": "Kamrul Hasan", "rank": "cadet", "rankName": "Cdt" },
+    { "id": 112, "name": "Jubayer Ahmed", "rank": "cadet", "rankName": "Cdt" }
+  ],
+  "parades": [
+    {
+      "id": "p1",
+      "date": "26 Nov, 2025",
+      "day": "Wednesday",
+      "type": "Regular Parade",
+      "attendance": { "101": 1, "102": 1, "103": 1, "104": 1, "105": 1, "106": 1, "107": 0, "108": 1, "109": 1, "110": 1, "111": 1, "112": 0 },
+      "notes": { "103": "Sick Leave", "107": "Exam" }
+    },
+    {
+      "id": "p2",
+      "date": "22 Nov, 2025",
+      "day": "Saturday",
+      "type": "Special Drill",
+      "attendance": { "101": 1, "102": 1, "103": 1, "104": 1, "105": 0, "106": 1, "107": 1, "108": 0, "109": 1, "110": 0, "111": 1, "112": 1 },
+      "notes": { "105": "Family Emergency", "108": "Unknown", "110": "Late" }
+    },
+    {
+      "id": "p3",
+      "date": "19 Nov, 2025",
+      "day": "Wednesday",
+      "type": "Theory Class",
+      "attendance": { "101": 1, "102": 1, "103": 1, "104": 1, "105": 1, "106": 0, "107": 1, "108": 1, "109": 0, "110": 1, "111": 0, "112": 1 },
+      "notes": { "102": "Official Duty", "106": "Sick", "109": "Absent" }
+    },
+    {
+      "id": "p4",
+      "date": "15 Nov, 2025",
+      "day": "Saturday",
+      "type": "Camping Prep",
+      "attendance": { "101": 1, "102": 1, "103": 1, "104": 1, "105": 1, "106": 1, "107": 1, "108": 1, "109": 1, "110": 1, "111": 1, "112": 1 },
+      "notes": {}
+    },
+    { "id": "p5", "date": "12 Nov, 2025", "day": "Wednesday", "type": "Regular Parade", "attendance": { "101": 1, "102": 1 }, "notes": {} },
+    { "id": "p6", "date": "08 Nov, 2025", "day": "Saturday", "type": "Drill", "attendance": { "101": 1, "104": 0 }, "notes": {} },
+    { "id": "p7", "date": "05 Nov, 2025", "day": "Wednesday", "type": "Lecture", "attendance": { "101": 1, "104": 0 }, "notes": {} },
+    { "id": "p8", "date": "01 Nov, 2025", "day": "Saturday", "type": "Regular", "attendance": { "101": 1, "104": 1 }, "notes": {} },
+    { "id": "p9", "date": "28 Oct, 2025", "day": "Wednesday", "type": "Drill", "attendance": { "101": 1, "104": 0 }, "notes": {} },
+    { "id": "p10", "date": "24 Oct, 2025", "day": "Saturday", "type": "Drill", "attendance": { "101": 1, "104": 0 }, "notes": {} },
+    { "id": "p11", "date": "20 Oct, 2025", "day": "Tuesday", "type": "Special", "attendance": { "101": 1, "104": 0 }, "notes": {} }
+  ]
+}
