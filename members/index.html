@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Our Platoon Members | Govt. Science College BNCC</title>
-    <meta name="description" content="Meet the dedicated members, officers, and cadets of Government Science College BNCC Platoon. The backbone of our discipline and unity.">
+    <meta name="description" content="Meet the dedicated members, officers, and cadets of Government Science College BNCC Platoon.">
     <meta name="keywords" content="BNCC Members, GSC Cadets, PUO, CUO, Sergeant, Corporal, Military Team">
     <meta name="author" content="Govt. Science College BNCC">
 
@@ -16,8 +16,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
         tailwind.config = {
@@ -42,31 +40,24 @@
     </script>
 
     <style>
-        /* Navbar Glass Effect (Same as Main Page) */
         .glass-nav {
             background: rgba(6, 79, 43, 0.95);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
-        /* Custom Card Hover Effects */
         .profile-card {
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .profile-card:hover {
             transform: translateY(-10px);
         }
-        
-        /* Social Icon Hover Animation */
         .social-icon {
             transition: all 0.3s ease;
         }
         .social-icon:hover {
             transform: scale(1.2);
         }
-
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #032d18; }
         ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
@@ -76,7 +67,6 @@
 
 <nav id="navbar" class="fixed w-full z-50 top-0 transition-all duration-300 border-b border-white/10 bg-bnccGreen/95 backdrop-blur-md">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-        
         <a href="/gscbncc/" class="flex items-center gap-3 group">
             <div class="w-10 h-10 bg-bnccGold rounded-full flex items-center justify-center text-bnccGreen font-bold shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-6 h-6">
@@ -90,33 +80,12 @@
         </a>
 
         <div class="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-widest uppercase text-white font-sans">
-            <a href="/gscbncc/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">
-                Home<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-bnccGold transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="/gscbncc/about/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">
-                About
-            </a>
-            <a href="/gscbncc/members/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">
-                Members
-            </a>
-            <a href="/gscbncc/community/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">
-                Community
-            </a>
-            <a href="/gscbncc/attendance/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">
-                Attendance
-            </a>
-            <a href="/gscbncc/gallery/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">
-                Gallery
-            </a>
-            <a href="/gscbncc/faq/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">
-                FAQ
-            </a>
-        </div>
-
-        <div class="hidden lg:block">
-            <a href="/gscbncc/#contact" class="px-6 py-2 border border-bnccGold text-bnccGold font-bold text-xs uppercase tracking-widest hover:bg-bnccGold hover:text-bnccDark transition-all rounded-sm shadow-[0_0_15px_rgba(212,175,55,0.3)] hover:shadow-[0_0_20px_rgba(212,175,55,0.6)]">
-                Join Now
-            </a>
+            <a href="/gscbncc/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">Home</a>
+            <a href="/gscbncc/about/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">About</a>
+            <a href="/gscbncc/members/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">Members</a>
+            <a href="/gscbncc/community/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">Community</a>
+            <a href="/gscbncc/attendance/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">Attendance</a>
+            <a href="/gscbncc/gallery/" class="nav-link hover:text-bnccGold transition-all duration-300 relative group py-2">Gallery</a>
         </div>
 
         <button id="mobile-btn" class="lg:hidden text-white hover:text-bnccGold transition-colors focus:outline-none">
@@ -127,63 +96,11 @@
     <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full bg-bnccDark/95 backdrop-blur-xl border-t border-white/10 shadow-2xl origin-top animate-in slide-in-from-top-5 duration-300">
         <div class="flex flex-col p-6 space-y-4 text-center text-white uppercase tracking-widest font-sans text-sm">
             <a href="/gscbncc/" class="mobile-link py-3 hover:text-bnccGold border-b border-white/5">Home</a>
-            <a href="/gscbncc/about/" class="mobile-link py-3 hover:text-bnccGold border-b border-white/5">About</a>
             <a href="/gscbncc/members/" class="mobile-link py-3 hover:text-bnccGold border-b border-white/5">Members</a>
-            <a href="/gscbncc/community/" class="mobile-link py-3 hover:text-bnccGold border-b border-white/5">Community</a>
-            <a href="/gscbncc/attendance/" class="mobile-link py-3 hover:text-bnccGold border-b border-white/5">Attendance</a>
             <a href="/gscbncc/gallery/" class="mobile-link py-3 hover:text-bnccGold border-b border-white/5">Gallery</a>
-            <a href="/gscbncc/faq/" class="mobile-link py-3 hover:text-bnccGold border-b border-white/5">FAQ</a>
-            <a href="/gscbncc/#contact" class="mt-4 px-6 py-3 bg-bnccGold text-bnccDark font-bold rounded-sm">Join The Platoon</a>
         </div>
     </div>
 </nav>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // 1. Initialize Icons
-        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
-
-        // 2. Mobile Menu Toggle
-        const btn = document.getElementById('mobile-btn');
-        const menu = document.getElementById('mobile-menu');
-        if(btn && menu){
-            btn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-                const icon = menu.classList.contains('hidden') ? 'menu' : 'x';
-                btn.innerHTML = `<i data-lucide="${icon}" class="w-8 h-8"></i>`;
-                lucide.createIcons();
-            });
-        }
-
-        // 3. Auto-Active Link Highlighter (UPDATED FOR GITHUB PAGES)
-        const currentPath = window.location.pathname; 
-        
-        const setActive = (link) => {
-            link.classList.add('text-bnccGold', 'border-b-2', 'border-bnccGold'); 
-            link.classList.remove('text-white');
-        };
-
-        const links = document.querySelectorAll('.nav-link');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-        const allLinks = [...links, ...mobileLinks];
-        
-        allLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            
-            // Logic for HOME page (checking for /gscbncc/ root)
-            if (href === '/gscbncc/' || href === '/gscbncc/index.html') {
-                // If we are exactly at the root or index.html
-                if (currentPath === '/gscbncc/' || currentPath === '/gscbncc/index.html') {
-                     setActive(link);
-                }
-            }
-            // Logic for Subpages (checking if URL contains the section name)
-            else if (currentPath.includes(href)) {
-                setActive(link);
-            }
-        });
-    });
-</script>
 
     <header class="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-hero-members bg-cover bg-center bg-fixed" role="img"></div>
@@ -195,7 +112,7 @@
                 The Backbone of <br><span class="text-bnccGold">Our Platoon</span>
             </h1>
             <p class="text-gray-200 text-lg max-w-2xl mx-auto font-light">
-                Meet the leaders and cadets who uphold the legacy of discipline, unity, and service at Government Science College.
+                Meet the leaders and cadets who uphold the legacy of discipline, unity, and service.
             </p>
         </div>
     </header>
@@ -210,133 +127,437 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
-                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-bnccRed" data-aos="fade-up" data-aos-delay="0">
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-bnccRed col-span-1 md:col-start-2 lg:col-start-2 lg:col-span-2" data-aos="fade-up">
                     <div class="absolute top-0 right-0 w-24 h-24 bg-bnccRed/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
-                    
                     <div class="p-8 text-center">
                         <div class="relative mx-auto w-32 h-32 mb-4">
                             <div class="absolute inset-0 rounded-full border-2 border-dashed border-bnccRed animate-[spin_10s_linear_infinite]"></div>
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" alt="Member Name" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md relative z-10" loading="lazy">
+                            <img src="https://ui-avatars.com/api/?name=Kazi+Mohammad&background=BB1D1D&color=fff" alt="PUO" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md relative z-10">
                         </div>
-
-                        <h3 class="text-xl font-serif font-bold text-gray-800 group-hover:text-bnccRed transition-colors">John Doe</h3>
-                        
-                        <div class="mt-1">
-                            <span class="inline-block px-2 py-1 bg-bnccRed/10 text-bnccRed text-xs font-bold uppercase tracking-widest rounded-sm">PUO / BTO</span>
+                        <h3 class="text-2xl font-serif font-bold text-gray-800 group-hover:text-bnccRed transition-colors">Kazi Mohammad Anwarul Afsar Faruqui</h3>
+                        <div class="mt-2">
+                            <span class="inline-block px-4 py-1 bg-bnccRed/10 text-bnccRed text-sm font-bold uppercase tracking-widest rounded-sm">Professor Under Officer</span>
                         </div>
-
-                        <p class="text-gray-400 text-xs font-mono mt-2">ID: GSC-FAC-01</p>
-
                         <div class="w-1/2 h-px bg-gray-200 mx-auto my-5 group-hover:w-3/4 group-hover:bg-bnccRed transition-all duration-300"></div>
-
-                        <div class="flex justify-center gap-5">
-                            <a href="#" class="social-icon text-gray-400 hover:text-blue-600"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-pink-600"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-bnccGreen"><i data-lucide="phone" class="w-5 h-5"></i></a>
-                        </div>
                     </div>
                 </article>
 
-                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-bnccGold" data-aos="fade-up" data-aos-delay="100">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-bnccGold/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
-                    
-                    <div class="p-8 text-center">
-                        <div class="relative mx-auto w-32 h-32 mb-4">
-                            <div class="absolute inset-0 rounded-full border-2 border-dashed border-bnccGold animate-[spin_10s_linear_infinite]"></div>
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" alt="Member Name" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md relative z-10" loading="lazy">
-                        </div>
-                        
-                        <h3 class="text-xl font-serif font-bold text-gray-800 group-hover:text-bnccGold transition-colors">Rahim Ahmed</h3>
-                        
-                        <div class="mt-1">
-                            <span class="inline-block px-2 py-1 bg-bnccGold/10 text-bnccDark text-xs font-bold uppercase tracking-widest rounded-sm">C.U.O</span>
-                        </div>
-                        <p class="text-gray-400 text-xs font-mono mt-2">No: 20230001</p>
-
-                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-5 group-hover:w-3/4 group-hover:bg-bnccGold transition-all duration-300"></div>
-
-                        <div class="flex justify-center gap-5">
-                            <a href="#" class="social-icon text-gray-400 hover:text-blue-600"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-pink-600"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-bnccGreen"><i data-lucide="phone" class="w-5 h-5"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-bnccGreen" data-aos="fade-up" data-aos-delay="200">
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-bnccGreen" data-aos="fade-up" data-aos-delay="100">
                     <div class="absolute top-0 right-0 w-24 h-24 bg-bnccGreen/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
-                    
                     <div class="p-8 text-center">
                         <div class="relative mx-auto w-32 h-32 mb-4">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" alt="Member Name" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md group-hover:border-bnccGreen transition-colors" loading="lazy">
+                            <img src="https://ui-avatars.com/api/?name=Md+Junaid&background=064F2B&color=fff" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
                         </div>
-                        
-                        <h3 class="text-xl font-serif font-bold text-gray-800 group-hover:text-bnccGreen transition-colors">Karim Islam</h3>
-                        
-                        <div class="mt-1">
-                            <span class="inline-block px-2 py-1 bg-bnccGreen/10 text-bnccGreen text-xs font-bold uppercase tracking-widest rounded-sm">Sergeant</span>
-                        </div>
-                        <p class="text-gray-400 text-xs font-mono mt-2">No: 20230005</p>
-
-                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-5 group-hover:w-3/4 group-hover:bg-bnccGreen transition-all duration-300"></div>
-
-                        <div class="flex justify-center gap-5">
-                            <a href="#" class="social-icon text-gray-400 hover:text-blue-600"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-pink-600"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-bnccGreen"><i data-lucide="phone" class="w-5 h-5"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-gray-400" data-aos="fade-up" data-aos-delay="300">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-gray-100 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
-                    
-                    <div class="p-8 text-center">
-                        <div class="relative mx-auto w-32 h-32 mb-4">
-                            <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=400&auto=format&fit=crop" alt="Member Name" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md group-hover:grayscale transition-all" loading="lazy">
-                        </div>
-                        
-                        <h3 class="text-xl font-serif font-bold text-gray-800">Sajid Hasan</h3>
-                        
-                        <div class="mt-1">
-                            <span class="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-widest rounded-sm">Corporal</span>
-                        </div>
-                        <p class="text-gray-400 text-xs font-mono mt-2">No: 20230012</p>
-
-                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-5 group-hover:w-3/4 group-hover:bg-gray-400 transition-all duration-300"></div>
-
-                        <div class="flex justify-center gap-5">
-                            <a href="#" class="social-icon text-gray-400 hover:text-blue-600"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-pink-600"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-bnccGreen"><i data-lucide="phone" class="w-5 h-5"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up" data-aos-delay="400">
-                    <div class="p-8 text-center">
-                        <div class="relative mx-auto w-32 h-32 mb-4">
-                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=400&auto=format&fit=crop" alt="Member Name" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md" loading="lazy">
-                        </div>
-                        <h3 class="text-xl font-serif font-bold text-gray-800">Tanvir Hossain</h3>
-                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
-                        <p class="text-gray-400 text-xs font-mono mt-2">No: 20240001</p>
+                        <h3 class="text-xl font-serif font-bold text-gray-800 group-hover:text-bnccGreen transition-colors">Md. Junaid</h3>
+                        <div class="mt-1"><span class="inline-block px-2 py-1 bg-bnccGreen/10 text-bnccGreen text-xs font-bold uppercase tracking-widest rounded-sm">Sergeant (SGT)</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 24010306</p>
                         <div class="w-1/2 h-px bg-gray-200 mx-auto my-5"></div>
-                        <div class="flex justify-center gap-5">
-                            <a href="#" class="social-icon text-gray-400 hover:text-blue-600"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-pink-600"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                            <a href="#" class="social-icon text-gray-400 hover:text-bnccGreen"><i data-lucide="phone" class="w-5 h-5"></i></a>
-                        </div>
+                        <a href="tel:+8801773422843" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-sm"><i data-lucide="phone" class="w-4 h-4"></i> 01773422843</a>
                     </div>
                 </article>
 
-                </div>
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-bnccGold" data-aos="fade-up" data-aos-delay="150">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-bnccGold/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Shahriar+Islam&background=D4AF37&color=fff" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-gray-800 group-hover:text-bnccGold transition-colors">Shahriar Islam Limon</h3>
+                        <div class="mt-1"><span class="inline-block px-2 py-1 bg-bnccGold/10 text-bnccDark text-xs font-bold uppercase tracking-widest rounded-sm">Corporal (CPL)</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 24010301</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-5"></div>
+                        <a href="tel:+8801575554704" class="social-icon inline-flex text-gray-400 hover:text-bnccGold gap-2 text-sm"><i data-lucide="phone" class="w-4 h-4"></i> 01575554704</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-bnccGold" data-aos="fade-up" data-aos-delay="150">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-bnccGold/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Saim+Zulfikar&background=D4AF37&color=fff" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-gray-800 group-hover:text-bnccGold transition-colors">Saim Zulfikar</h3>
+                        <div class="mt-1"><span class="inline-block px-2 py-1 bg-bnccGold/10 text-bnccDark text-xs font-bold uppercase tracking-widest rounded-sm">Corporal (CPL)</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 24010305</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-5"></div>
+                        <a href="tel:+8801848659858" class="social-icon inline-flex text-gray-400 hover:text-bnccGold gap-2 text-sm"><i data-lucide="phone" class="w-4 h-4"></i> 01848659858</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-bnccGold" data-aos="fade-up" data-aos-delay="150">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-bnccGold/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Ahnaf+Akib&background=D4AF37&color=fff" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-gray-800 group-hover:text-bnccGold transition-colors">Ahnaf Akib Chowdhury</h3>
+                        <div class="mt-1"><span class="inline-block px-2 py-1 bg-bnccGold/10 text-bnccDark text-xs font-bold uppercase tracking-widest rounded-sm">Corporal (CPL)</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 24010311</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-5"></div>
+                        <a href="tel:+8801305786135" class="social-icon inline-flex text-gray-400 hover:text-bnccGold gap-2 text-sm"><i data-lucide="phone" class="w-4 h-4"></i> 01305786135</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-gray-400" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gray-100 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Redwan+Hossain&background=9ca3af&color=fff" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-gray-800">Md. Redwan Hossain Ramim</h3>
+                        <div class="mt-1"><span class="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-widest rounded-sm">L. Corporal</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 24010304</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-5 group-hover:w-3/4 transition-all"></div>
+                        <a href="tel:+8801719197034" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-sm"><i data-lucide="phone" class="w-4 h-4"></i> 01719197034</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-gray-400" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gray-100 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Ayub+Khan&background=9ca3af&color=fff" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-gray-800">Md. Ayub Khan</h3>
+                        <div class="mt-1"><span class="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-widest rounded-sm">L. Corporal</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 24010308</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-5 group-hover:w-3/4 transition-all"></div>
+                        <a href="tel:+8801712220523" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-sm"><i data-lucide="phone" class="w-4 h-4"></i> 01712220523</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-t-4 border-gray-400" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gray-100 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Jubayer+Ahmed&background=9ca3af&color=fff" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-gray-800">Jubayer Ahmed Bin Jashim</h3>
+                        <div class="mt-1"><span class="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-widest rounded-sm">L. Corporal</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 24010310</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-5 group-hover:w-3/4 transition-all"></div>
+                        <a href="tel:+8801770991901" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-sm"><i data-lucide="phone" class="w-4 h-4"></i> 01770991901</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Wakil+Ibne+Amin&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Wakil Ibne Amin</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010301</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801721144918" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01721144918</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Tahsin+Khan&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Md. Tahsin Khan</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010302</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801776478445" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01776478445</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Safwan+Ahmed&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Safwan Ahmed</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010303</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801948609350" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01948609350</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Hasanul+Islam&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Md. Hasanul Islam</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010304</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801400685557" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01400685557</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Junaid+Sarkar&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Md. Junaid Sarkar</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010305</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801751716430" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01751716430</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Tamjid+Al+Imran&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Md. Tamjid Al Imran</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010306</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801623725346" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01623725346</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Mehrab+Hasan&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Mehrab Hasan Purno</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010307</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801343816837" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01343816837</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Mashrafi+Pramanik&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Md. Mashrafi Pramanik</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010308</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801786769094" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01786769094</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Jubayer+Ahmed&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Md. Jubayer Ahmed</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010309</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801622914847" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01622914847</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Sajid+Abdullah&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Sajid Abdullah Moaz</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010310</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801853373452" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01853373452</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Junaid+Mazumder&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Junaid Mazumder</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010311</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801606965040" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01606965040</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Rakin+Mahmud&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">G. M. Rakin Mahmud</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010312</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801966294445" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01966294445</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Mohammad+Anas&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Mohammad Anas</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010313</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801824912228" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01824912228</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Tuhin+Mollick&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Md. Tuhin Mollick</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010314</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801303589754" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01303589754</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Sadi+Mukul&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Md. Sheikh Sadi Mukul</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010315</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801537217365" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01537217365</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Partho+Protim&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Partho Protim Roy</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010316</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801987059541" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01987059541</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=AJM+Nurnobi&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">A. J. M. Nurnobi</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010317</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801928777475" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01928777475</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Abdur+Rahman&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Abdur Rahman Ibne Hasan</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010318</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801572922319" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01572922319</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Izbad+Labib&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">A. K. M. Izbad Labib</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010319</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801304462962" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01304462962</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Najiat+Jahan&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Md. Najiat Jahan Siam</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010320</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801345613230" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01345613230</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Abid+Ul+Haque&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Abid Ul Haque</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010321</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801794169080" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01794169080</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Ahmad+Ahsan&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Ahmad Ahsan Sayeed</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010322</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801816446509" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01816446509</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Afnan+Khan&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Afnan Khan Utsho</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010323</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801322299731" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01322299731</a>
+                    </div>
+                </article>
+
+                <article class="profile-card bg-white rounded-xl shadow-lg overflow-hidden relative group border-b-4 border-bnccGreen hover:border-bnccGold transition-colors" data-aos="fade-up">
+                    <div class="p-8 text-center">
+                        <div class="relative mx-auto w-32 h-32 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Tahsin+Aryan&background=random" alt="Member" class="w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-gray-800">Tahsin Aryan Monon</h3>
+                        <div class="mt-1"><span class="text-bnccDark text-xs font-bold uppercase tracking-widest">Cadet</span></div>
+                        <p class="text-gray-400 text-xs font-mono mt-2">ID: 25010324</p>
+                        <div class="w-1/2 h-px bg-gray-200 mx-auto my-4"></div>
+                        <a href="tel:+8801715922235" class="social-icon inline-flex text-gray-400 hover:text-bnccGreen gap-2 text-xs"><i data-lucide="phone" class="w-3 h-3"></i> 01715922235</a>
+                    </div>
+                </article>
+
+            </div>
         </div>
     </section>
 
     <section class="py-24 relative bg-fixed bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1579965342575-16428a7c8d77?q=80&w=2000&auto=format&fit=crop');">
         <div class="absolute inset-0 bg-bnccGreen/90"></div>
-        
         <div class="container mx-auto px-6 relative z-10 text-center" data-aos="zoom-in">
             <div class="mb-6">
                 <i data-lucide="quote" class="w-12 h-12 text-bnccGold mx-auto opacity-50 fill-current"></i>
@@ -351,14 +572,11 @@
     </section>
 
 <footer class="bg-bnccDark text-white pt-16 pb-8 border-t-4 border-bnccGold relative overflow-hidden">
-    
     <div class="absolute top-0 right-0 opacity-5 pointer-events-none">
         <svg width="300" height="300" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
     </div>
-
     <div class="container mx-auto px-6 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-            
             <div class="col-span-1 md:col-span-2">
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-10 h-10 bg-bnccGold rounded-full flex items-center justify-center text-bnccGreen font-bold">
@@ -377,29 +595,21 @@
                     <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-bnccRed hover:text-white hover:border-bnccRed transition-all duration-300 group">
                         <i data-lucide="youtube" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-bnccGreen hover:text-white hover:border-bnccGreen transition-all duration-300 group">
-                        <i data-lucide="instagram" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
-                    </a>
                 </div>
             </div>
-
             <div>
                 <h4 class="font-bold mb-6 text-bnccGold uppercase tracking-wider text-sm border-b border-white/10 pb-2 inline-block">Quick Links</h4>
                 <ul class="space-y-3 text-sm font-sans text-gray-400">
                     <li><a href="/gscbncc/" class="hover:text-bnccGold hover:pl-2 transition-all duration-300 flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Home</a></li>
                     <li><a href="/gscbncc/about/" class="hover:text-bnccGold hover:pl-2 transition-all duration-300 flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> About BNCC</a></li>
-                    <li><a href="/gscbncc/faq/" class="hover:text-bnccGold hover:pl-2 transition-all duration-300 flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> FAQ / Help</a></li>
-                    <li><a href="/gscbncc/#contact" class="hover:text-bnccGold hover:pl-2 transition-all duration-300 flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Join Us</a></li>
+                    <li><a href="/gscbncc/gallery/" class="hover:text-bnccGold hover:pl-2 transition-all duration-300 flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Gallery</a></li>
                 </ul>
             </div>
-
             <div>
                 <h4 class="font-bold mb-6 text-bnccGold uppercase tracking-wider text-sm border-b border-white/10 pb-2 inline-block">Resources</h4>
                 <ul class="space-y-3 text-sm font-sans text-gray-400">
                     <li><a href="/gscbncc/members/" class="hover:text-bnccGold hover:pl-2 transition-all duration-300 flex items-center gap-2"><i data-lucide="users" class="w-3 h-3"></i> Our Members</a></li>
-                    <li><a href="/gscbncc/community/" class="hover:text-bnccGold hover:pl-2 transition-all duration-300 flex items-center gap-2"><i data-lucide="heart-handshake" class="w-3 h-3"></i> Community</a></li>
                     <li><a href="/gscbncc/attendance/" class="hover:text-bnccGold hover:pl-2 transition-all duration-300 flex items-center gap-2"><i data-lucide="clipboard-check" class="w-3 h-3"></i> Attendance</a></li>
-                    <li><a href="/gscbncc/gallery/" class="hover:text-bnccGold hover:pl-2 transition-all duration-300 flex items-center gap-2"><i data-lucide="image" class="w-3 h-3"></i> Photo Gallery</a></li>
                 </ul>
             </div>
         </div>
@@ -407,7 +617,6 @@
         <div class="border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans text-gray-500">
             <div class="text-center md:text-left">
                 <p>&copy; 2025 Govt. Science College BNCC Platoon. All Rights Reserved.</p>
-                
                 <p class="mt-2 md:mt-1">
                     Made by 
                     <a href="https://www.facebook.com/" target="_blank" class="font-bold text-bnccGold text-sm hover:text-white transition-all duration-300 inline-block hover:scale-110 hover:tracking-wide origin-left">
@@ -415,7 +624,6 @@
                     </a>
                 </p>
             </div>
-            
             <div class="flex gap-6">
                 <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
                 <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
@@ -426,11 +634,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // 1. Initialize Icons
-        // We check if lucide is ready, otherwise the DOMContentLoaded script up top handles it
         if (typeof lucide !== 'undefined') { lucide.createIcons(); }
 
-        // 2. Initialize Animate On Scroll
         AOS.init({
             once: true,
             offset: 100,
@@ -438,7 +643,6 @@
             easing: 'ease-out-cubic',
         });
 
-        // 3. Navbar Scroll Effect (Glassmorphism)
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -449,9 +653,18 @@
                 navbar.classList.add('py-4');
             }
         });
-
-        // REMOVED: The duplicate "Mobile Menu Toggle" code was here. 
-        // The script at the top of your file (Line 118) handles the menu perfectly.
+        
+        // Mobile Menu Logic (Ensures no conflicts)
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+        if(btn && menu){
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                const icon = menu.classList.contains('hidden') ? 'menu' : 'x';
+                btn.innerHTML = `<i data-lucide="${icon}" class="w-8 h-8"></i>`;
+                lucide.createIcons();
+            });
+        }
     </script>
 </body>
 </html>

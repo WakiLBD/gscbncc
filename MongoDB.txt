@@ -1,0 +1,1 @@
+mongodb+srv://GSCBNCC:GSCBNCC@gscbncc.wsrnyx6.mongodb.net/?appName=GSCBNCC
